@@ -1,0 +1,115 @@
+body {
+  background: url('http://lorempixel.com/1403/701/city') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
+
+nav {
+  background-color: #FFF;
+  color: #000;
+  margin: 0px;
+  width: auto;
+  position: fixed;
+  left: 100px;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid #777;
+  border-top: none;
+  box-shadow: 0px 0px 10px 0px #666; }
+  nav ul {
+    padding: 0px;
+    margin: 0px; }
+    nav ul li {
+      list-style-type: none;
+      display: inline-block; }
+      nav ul li a {
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 19px;
+        color: black;
+        margin: 0px; }
+        nav ul li a:hover {
+          text-decoration: underline; }
+      nav ul li:first-child {
+        border-radius: 0px 0px 0px 10px; }
+      nav ul li:last-child {
+        border-radius: 0px 0px 10px 0px; }
+
+section#head {
+  color: #FFF;
+  height: 100%;
+  background-color: #8CA; }
+  section#head h1, section#head h2, section#head h3 {
+    font-family: 'Indie Flower', cursive; }
+  section#head h1 {
+    font-size: 50px;
+    margin: 0px;
+    text-shadow: 0px 0px 2px #000;
+    font-family: 'Indie Flower', cursive; }
+  section#head h2 {
+    font-size: 45px;
+    margin: 0px;
+    text-shadow: 0px 0px 4px #000; }
+  section#head h3 {
+    font-size: 100px;
+    margin: 0px;
+    text-shadow: 0px 0px 10px #000; }
+section#about {
+  padding: 2%;
+  padding-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.73); }
+  section#about h1 {
+    font-size: 40px; }
+  section#about img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 100px; }
+section#contact {
+  background-color: black;
+  padding: 5%;
+  text-align: left; }
+  section#contact h1 {
+    color: #FFF;
+    font-size: 40px; }
+  section#contact input[type="text"], section#contact textarea, section#contact input[type="submit"] {
+    padding: 8px 10px;
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0px;
+    font-size: 16px;
+    color: #444; }
+  section#contact input[type="text"] {
+    width: 50%;
+    padding: 12px 10px; }
+  section#contact input[type="submit"] {
+    width: 100px;
+    padding: 10px 0px;
+    border: 0px;
+    background-color: #449;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 3px; }
+  section#contact textarea {
+    width: 75%;
+    height: 200px; }
+
+.container {
+  width: 50%;
+  text-align: center;
+  margin: auto; }
+
+footer {
+  background-color: #34A;
+  color: #EEE;
+  font-size: 12px;
+  text-align: center;
+  padding: 50px 0px; }
+  footer .social-icons {
+    margin-bottom: 10px; }
+    footer .social-icons i {
+      font-size: 40px; }
+
+/*# sourceMappingURL=body.css.map */

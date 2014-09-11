@@ -1,0 +1,71 @@
+// Global Foundation vars
+//----------------------------------------------------------
+
+// This file contains global variables and settings for Foundation
+// When adding new variables, be sure to use `!default` to allow over-riding
+// at the project level
+
+// Compass experimental support setttings
+//----------------------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|Lobster|Shadows+Into+Light|Open+Sans+Condensed:300,300italic|Indie+Flower|Roboto:400,100,700);
+// $experimental-support-for-khtml: false
+// $experimental-support-for-microsoft: false
+
+// Font stacks
+//----------------------------------------------------------
+
+ $helvetica-font-stack: "Open Sans", sans-serif;
+
+// Default body tag variables
+//----------------------------------------------------------
+
+ $body-font-size: 13;
+ $body-font-family: $helvetica-font-stack;
+$indie-cursive-font: 'Indie Flower', cursive;
+$roboto-font-family: 'Roboto', sans-serif;
+// $body-background: #fff
+// $body-line-height: 18px
+// $body-color: #555
+
+// Grid settings
+//----------------------------------------------------------
+
+// $grid-max-width: 980px
+// $grid-min-width: 727px
+// $support-block-grid-nth-child: false
+
+// Button settings
+//----------------------------------------------------------
+
+// $button-transition-duration: .25s
+
+// Orbit settings
+//----------------------------------------------------------
+
+// $orbit-slider-id: featured
+// $include-default-orbit-slider-id: true
+
+// Default Color
+//----------------------------------------------------------
+// $default-color: #00a6fc
+
+//$include-html-classes: false;
+
+/*
+ * Media Queries
+ */
+$break-small: 320px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}

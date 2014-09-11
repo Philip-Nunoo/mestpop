@@ -1,0 +1,275 @@
+// ZURB Foundation settings
+@import "settings";
+@import "normalize";
+@import "foundation/components/global";
+@import "foundation/components/grid";
+
+body{
+    background: url('http://lorempixel.com/1403/701/city') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+nav{
+    background-color: #FFF;
+    color: #000;
+    margin: 0px;
+    width: auto;
+    position: fixed;
+    left: 100px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #777;
+    border-top: none;
+    box-shadow: 0px 0px 10px 0px #666;
+    
+    ul{
+        padding: 0px;
+        margin: 0px;
+        
+        @include respond-to(handhelds) {display: none; width: 100% ;}
+        @include respond-to(medium-screens) {display: none; width: 100% ; }
+        @include respond-to(wide-screens) { float: none; }
+        
+        li{
+            list-style-type: none;            
+            display: inline-block;
+            
+            a{
+                display: inline-block;
+                padding: 15px 20px;
+                text-decoration: none;
+                font-size: 19px;
+                color: black;
+                margin: 0px;
+                
+                
+                &:hover{
+                    text-decoration: underline;
+//                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+            
+            &:hover{
+            }
+            &:first-child{
+                border-radius: 0px 0px 0px 10px;
+                &:hover{
+                }
+            }
+            
+            &:last-child{
+                border-radius: 0px 0px 10px 0px;
+                
+                &:hover{
+                }
+            }
+            
+        }
+    }
+}
+
+section{
+    &#head{
+        color: #FFF;
+        height: 100%;
+        background-color: #8CA;
+        padding-top: 10%;
+        
+        @include respond-to(handhelds) { 
+            padding-top: 20%;
+        }
+        @include respond-to(medium-screens) {
+            height: auto;
+            padding-bottom: 20%;
+        }
+        @include respond-to(wide-screens) { float: none; }
+        h1, h2, h3{
+            font-family: $indie-cursive-font;
+        }
+            
+        h1{
+            font-size: 4.7em;
+            margin: 0px;
+            text-shadow: 0px 0px 2px #000;
+            font-family: $indie-cursive-font;
+
+            @include respond-to(handhelds) { 
+                font-size: 1.5em; 
+                width: 100% ;
+            }
+            @include respond-to(medium-screens) { 
+                font-size: 1.5em; 
+                width: 100% ;
+            }
+            @include respond-to(wide-screens) {}
+        }
+
+        h2{
+            font-size: 45px;
+            margin: 0px;
+            text-shadow: 0px 0px 4px #000;
+            
+            @include respond-to(handhelds) { 
+                font-size: 2.3em;
+                width: 100% ;
+                margin: 50px 0px;
+            }
+            
+            @include respond-to(medium-screens) { 
+                font-size: 2.3em;
+                width: 100% ;
+                margin: 50px 0px;
+            }
+            
+            @include respond-to(wide-screens) { float: none; }
+        }
+
+        h3{
+            font-size: 100px;
+            margin: 0px;
+            text-shadow: 0px 0px 10px #000;
+            @include respond-to(handhelds) { 
+                margin-top: 10px;
+                font-size: 5.1em;
+                width: 100% ;
+            }
+            @include respond-to(medium-screens) { 
+                margin-top: 10px;
+                font-size: 5.1em;
+                width: 100% ;
+            }
+            @include respond-to(wide-screens) { float: none; }
+        }
+        
+    }
+    
+    &#about{
+        padding: 2%;
+        padding-bottom: 5%;
+        background-color: rgba(255,255,255,0.73);
+            
+        p{
+            color: #000;
+            font-family: "Roboto", sans-serif;
+            line-height: 1.4em;
+            font-weight: 100;
+            text-rendering: optimizeLegibility;
+        }
+        h1{
+            font-size: 40px;
+            @include respond-to(handhelds){
+                font-size: 30px;
+            }
+        }
+        img{
+            display: block;
+            margin: 20px auto;
+            border-radius: 100px;
+            @include respond-to(handhelds){
+                width: 170px;
+            }
+            @include respond-to(medium-screens) { 
+            }
+
+        }
+        
+    }
+    
+    &#contact{
+        background-color: rgba(0,0,0,1);
+        padding: 5%;
+        text-align: left;
+
+        h1{
+            color: #FFF;
+            font-size: 40px;
+            
+            @include respond-to(handhelds){
+                font-size: 30px;
+            }
+        }
+        input[type="text"], textarea, input[type="submit"]{
+            padding: 8px 10px;
+            display: block;
+            margin-bottom: 12px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            background-color: rgba(255,255,255,0.9);
+            border: 0px;
+            font-size: 16px;
+            color: #444;
+
+        }
+
+        input[type="text"]{
+            width: 50%;
+            padding: 12px 10px;
+
+            @include respond-to(handhelds) { 
+                width: 100% ;
+            }
+            @include respond-to(medium-screens) { width: 100%; }
+            @include respond-to(wide-screens) { float: none; }
+
+        }
+
+        input[type="submit"]{
+            width: 100px;
+            padding: 10px 0px;
+            border: 0px;
+            background-color: #449;
+            font-weight: bold;
+            color: #FFF;
+            border-radius: 3px;
+        }
+        textarea{
+            width: 85%;
+            height: 200px;
+
+            @include respond-to(handhelds) { 
+                width: 100% ;
+            }
+            @include respond-to(medium-screens) { width: 100%; }
+            @include respond-to(wide-screens) { float: none; }
+
+        }
+        
+    }
+}
+
+.container{
+    width: 80%;
+    text-align: center;
+    margin: auto;        
+            
+    @include respond-to(handhelds) { 
+        width: 100% ;
+    }
+    @include respond-to(medium-screens) {
+        width: 100% ;
+    }
+    @include respond-to(wide-screens) { float: none; }
+}
+
+footer{
+    background-color: #34A;
+    color: #EEE;
+    font-size: 12px;
+    text-align: center;
+    padding: 50px 0px;
+    @include respond-to(handhelds){
+        font-size: 9px;
+    }
+    
+    .social-icons{
+        margin-bottom: 10px;
+        i{
+            font-size: 40px;
+            @include respond-to(handhelds){
+                font-size: 30px;
+            }
+        }
+    }
+    
+}
